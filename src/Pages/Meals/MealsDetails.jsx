@@ -48,6 +48,7 @@ export default function MealsDetails(props) {
       meals: { ...inProgress.meals,
         [id]: Ingredients.map((ing, i) => {
           if (Detail.meals[0][ing] !== '' && Detail.meals[0][ing] !== null) {
+            console.log(Detail);
             return (`${Detail.meals[0][ing]} ${Detail.meals[0][Measures[i]]}`);
           }
           return '';
